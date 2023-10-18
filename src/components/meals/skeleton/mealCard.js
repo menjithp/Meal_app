@@ -19,7 +19,7 @@ export default function mealCard_Skeleton() {
           active={true}
           size={"large"}
           shape={"default"}
-          style={{ minWidth: "200px", width: "100%", height: "200px" }}
+          style={{  width: "100%", height: "200px" }}
         />
         <br />
         <Skeleton.Input
