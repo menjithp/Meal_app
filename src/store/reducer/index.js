@@ -18,8 +18,8 @@ export const foodapp = createSlice({
   initialState,
   reducers: {
     filtervalue: (state,action) => {
-      state.filtervalue = action.payload.trim()
-      state.filtered_meallist=state.mealslist.filter((item)=>item.strMeal.toLowerCase().trim().includes(action.payload.trim().toLowerCase()))
+      state.filtervalue = action.payload
+      state.filtered_meallist=state.mealslist.filter((item)=>item.strMeal.toLowerCase().trim().includes(action.payload.toLowerCase()))
     },
     mealslist:(state,action)=>{
       state.mealslist = action.payload
