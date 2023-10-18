@@ -147,6 +147,8 @@ const App = () => {
             message: 'Please input your phone number!',
           },{
             validator:validateLength
+          }, {
+            validator:validateNumber
           }
         ]}
       >
