@@ -69,7 +69,7 @@ const App = () => {
     let len;
     if(rule.field==="phone")len=10
     else len=6
-    if(value && value.toString().length<len){
+    if(value && value.toString().length!==len){
        throw new Error(rule.field==="phone"?"Indian Mobile Number should be atleast 10":
       "Indian Pincode should be atleast 6")
     }
