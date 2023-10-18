@@ -48,7 +48,6 @@ export default function MealItem() {
     if(error)dispatch(errormealfetch(error))
 },[state,error])
 
-
   if (!state) return <MealItemSkeleton />;
   if (error)
     return (

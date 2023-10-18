@@ -13,6 +13,7 @@ import {
   Flex,
   Row,
   Col,
+  Space
 } from "antd";
 
 
@@ -20,17 +21,17 @@ const ItemSkeleton = () => {
   return (
     <>
       <br />
-      <Flex gap="large">
+      <Flex gap="large" justify='space-between'>
         <Skeleton.Button active={true} size={"default"} shape={"default"} />
-        <Skeleton.Input active={true} size={"default"} block={"default"} />
-        <Skeleton.Input active={true} size={"default"} />
+        <Skeleton.Input className="responsive-width-skeleton middle-item"  active={true} size={"default"} block={"default"} />
+        <Skeleton.Input className="responsive-width-skeleton" active={true} size={"default"} />
       </Flex>
       <br />
       <Flex align="center" justify="center">
         <Skeleton.Input
           active={true}
           size={"default"}
-          style={{ width: "300px" }}
+          
         />
       </Flex>
       <Divider />
@@ -48,19 +49,20 @@ const ItemSkeleton = () => {
       <br />
       <br />
       <Skeleton.Input active={true} size={"default"} />
+      <br/>
       <div style={{ marginTop: "1rem" }} />
       {[...Array(5)].map((item, index) => (
         <React.Fragment key={index}>
           {" "}
           <Row>
-            <Col xs={3}>
-              <Skeleton.Input active={true} size={"small"} />
+            <Col xs={6} sm={4} md={2} lg={2} xl={2} >
+              <Skeleton.Input active={true} size={"small"} style={{width:"50px" ,minWidth:"50px"}} />
             </Col>
-            <Col xs={12} sm={12} md={8} lg={6} xl={6}>
-              <Skeleton.Input active={true} size={"small"} />
+            <Col xs={8} sm={10} md={8} lg={6} xl={6}>
+              <Skeleton.Input  className="responsive-width-skeleton" active={true} size={"small"} />
             </Col>
             <Col>
-              <Skeleton.Input active={true} size={"small"} />
+              <Skeleton.Input className="responsive-width-skeleton" active={true} size={"small"} />
             </Col>
           </Row>
           <br />
