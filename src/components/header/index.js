@@ -1,3 +1,8 @@
+/*************************
+ * author   : Menjith P
+ * Purpose  : Header component which renders its children component
+ * 
+ *******************/
 import {useEffect, useRef, useState} from 'react'
 
 export default function Header(props){
