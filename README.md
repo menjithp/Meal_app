@@ -1,5 +1,5 @@
 # Deploye App Link
-primez-meal.vercel.app
+https://www.primez-meal.vercel.app
 
 ## open code in github codespace 
 ## To run app use command ---> npm start
